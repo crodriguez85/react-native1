@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Inicio() {
+export default function Inicio(props) {
   return (
     <View style={styles.container}>
-      <Text>Contador</Text>
+      <Text>{props.name}</Text>
     </View>
   );
 }
