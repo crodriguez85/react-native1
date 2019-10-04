@@ -20,6 +20,7 @@ export default function App() {
       <Header
         cambiarTexto={establecerTexto}
       />
+      <Text>{texto}</Text>
       <Body/>   
     </View>
   );
