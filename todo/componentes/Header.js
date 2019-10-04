@@ -9,6 +9,8 @@ export default function Header(props) {
                 style={styles.texto}
                 placeholder="Aqui Vescribe tu texto"
                 onChangeText={props.cambiarTexto}
+                onSubmitEditing={props.agregar}
+                value={props.texto}
              />
         </View>
      );

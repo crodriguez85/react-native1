@@ -15,10 +15,20 @@ export default function App() {
     setTexto(value);
   } 
 
+  const agregartarea = () => {
+    setTareas([
+      ...tareas,
+      texto
+    ])
+    setTexto('');
+  }
+
   return (
     <View style={styles.container}>
       <Header
+        texto={texto}
         cambiarTexto={establecerTexto}
+        agregar={agregartarea}
       />
       <Text>{texto}</Text>
       <Body/>   
