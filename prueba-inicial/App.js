@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
+// Componentes
+import Inicio from './Inicio';
+
 export default function App() {
 
   const [numero, setNumero] = useState(2);
@@ -8,18 +11,22 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Leon Chile Me Voy</Text>
-      <View style={styles.cajaUno}>
-        <Text>Contador</Text>
-      </View>
+        <Inicio
+          name="Calculadora"
+        />
       <View style={styles.cajaDos}>
         <Text>{numero}</Text>
       </View>
       <View style={styles.cajaTres}>
         <Button
           title="Aumentar"
-          onPress={() => {console.log('Aumentar')}}
+          onPress={() => setNumero(numero + 1)}
           >
-
+        </Button>
+        <Button
+          title="Disminuir"
+          onPress={() => setNumero(numero - 1)}
+          >
         </Button>
       </View>
     </View>
