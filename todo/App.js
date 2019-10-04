@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// Componentes
+import Header from './componentes/Header';
+import Body from './componentes/Body';
+
 export default function App() {
+
+  const [tareas, setTareas] = useState([]);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Header/>
+      <Body/>   
     </View>
   );
 }
@@ -13,7 +21,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
