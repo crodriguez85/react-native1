@@ -29,4 +29,6 @@ brew install watchmen
 ## justifyContent --> Alinea de Forma Vertical
 ## alignItems  --> Alinea de Forma Horizontal
 ## flex ordena las pantallas: proporcion
+## navegacion yarn add react-navigation
+
 
