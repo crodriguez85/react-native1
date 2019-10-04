@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 
-export default function Header() {
+export default function Header(props) {
     return ( 
         <View style={styles.container}>
             <Text>Header</Text>
             <TextInput
                 style={styles.texto}
                 placeholder="Aqui Vescribe tu texto"
-                onChangeText={(value) => {console.log(value)}}
+                onChangeText={props.cambiarTexto}
              />
         </View>
      );
