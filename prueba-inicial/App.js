@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 // Componentes
 import Inicio from './Inicio';
+import Body from './Body';
 
 export default function App() {
 
@@ -14,9 +15,12 @@ export default function App() {
         <Inicio
           name="Calculadora"
         />
-      <View style={styles.cajaDos}>
+      {/* <View style={styles.cajaDos}>
         <Text>{numero}</Text>
-      </View>
+      </View> */}
+      <Body
+        numero={numero}
+      />
       <View style={styles.cajaTres}>
         <Button
           title="Aumentar"
